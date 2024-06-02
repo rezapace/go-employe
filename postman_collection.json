@@ -1,0 +1,59 @@
+{
+    "info": {
+      "name": "Employee CRUD API",
+      "description": "Collection for testing Employee CRUD API",
+      "_postman_id": "d6e9c7c1-a9c9-4a3c-b7c6-a8b6c9d9e9f0"
+    },
+    "item": [
+      {
+        "name": "Create Employee",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"name\": \"John Doe\",\n    \"city\": \"New York\"\n}"
+          },
+          "url": "http://localhost:8080/employee"
+        }
+      },
+      {
+        "name": "Get Employee",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": "http://localhost:8080/employee/1"
+        }
+      },
+      {
+        "name": "Update Employee",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"name\": \"Jane Doe\",\n    \"city\": \"Los Angeles\"\n}"
+          },
+          "url": "http://localhost:8080/employee/1"
+        }
+      },
+      {
+        "name": "Delete Employee",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": "http://localhost:8080/employee/1"
+        }
+      }
+    ]
+  }
